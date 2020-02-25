@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+	<TITLE>Konversi</TITLE>
+</HEAD>
+<SCRIPT language="javascript">
+	
+	function test ()
+	{
+		var vall=document.kirim.nilai.value
+		if (vall>=81 && vall<=100)
+			document.kirim.konversi.value="A"
+		else if (vall>=71 && vall<=80)
+			document.kirim.konversi.value="AB"
+		else if (vall>=66 && vall<=70)
+			document.kirim.konversi.value="B"
+		else if (vall>=61 && vall<=65)
+			document.kirim.konversi.value="BC"
+		else if (vall>=56 && vall<=60)
+			document.kirim.konversi.value="C"
+		else if (vall>=41 && vall<=55)
+			document.kirim.konversi.value="D"
+		else if (vall>=0 && vall<=40)
+			document.kirim.konversi.value="E"
+	}
+</SCRIPT>
+<BODY>
+	<form method="POST" name="kirim">
+		<table width="300" height="160"
+		border="1" align="center"
+		bordercolor="FF0000"
+		bgcolor="191970">
+			
+			<tr>
+				<th colspan="2"
+				scope="col"><center><blink>Program
+				Java Script Konversi
+			Nilai</blink></center></th>
+
+		</tr>
+
+		<tr>
+			<td>Masukkan Nilai</td>
+
+			<td><input type="text"
+				name="nilai" size="20"></td>
+
+			</tr>
+
+			<tr>
+				<td>Konversi Nilai</td>
+
+				<td><input type="text"
+					id="konversi" name="konversi" size="20"></td>
+
+				</tr>
+
+				<tr>
+
+					<td>&nbsp;</td>
+
+					<td><input type="button"
+						value="konversi" name="B1"
+						onclick=test ()><input type="Reset"
+						value="Reset" name="reset"></td>
+
+					</tr>
+
+		</table>
+	</form>
+</BODY>
+</HTML>
